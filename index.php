@@ -21,9 +21,16 @@ $f3 = Base::instance();
 $f3->set('DEBUG', 3);
 
 //Define a default route
-$f3->route('GET /', function() {
-    $view = new View;
-    echo $view->render('views/info.html');
+$f3->route('GET /', function($f3){
+    //save variables
+    $f3->set('color', 'purple');
+    $f3->set('radius', 10);
+    $f3->set('links', array('https://en.wikipedia.org/wiki/Alondras_CF',
+        'https://en.wikipedia.org/wiki/James_D._Pfluger_Pedestrian_and_Bicycle_Bridge',
+        'https://en.wikipedia.org/wiki/Battor'));
+
+    $template = new Template;
+    echo $template->render('views/info.html');
 });
 
 //Run fat free

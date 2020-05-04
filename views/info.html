@@ -6,5 +6,12 @@
 </head>
 <body>
     <h1>week5</h1>
+    <p>I like the color: {{ @color }}</p>
+    <p>circumference: {{ @radius * 2 * 3.14 }}</p>
+    <ul>
+        <repeat group="{{ @links }}" value="{{ @links }}">
+            <li><a href="{{ @links }}"> {{ str_replace('http://','links', @bookmark) }}</a></li>
+        </repeat>
+    </ul>
 </body>
 </html>
