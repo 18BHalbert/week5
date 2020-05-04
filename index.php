@@ -28,6 +28,7 @@ $f3->route('GET /', function($f3){
     $f3->set('links', array('https://en.wikipedia.org/wiki/Alondras_CF',
         'https://en.wikipedia.org/wiki/James_D._Pfluger_Pedestrian_and_Bicycle_Bridge',
         'https://en.wikipedia.org/wiki/Battor'));
+    $f3->set('desserts', array('chocolate' => 'Chocolate Mousse', 'vanilla' => 'Vanilla Custard', 'strawberry' => 'Strawberry Shortcake'));
 
     $template = new Template;
     echo $template->render('views/info.html');

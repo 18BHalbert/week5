@@ -10,8 +10,12 @@
     <p>circumference: {{ @radius * 2 * 3.14 }}</p>
     <ul>
         <repeat group="{{ @links }}" value="{{ @links }}">
-            <li><a href="{{ @links }}"> {{ str_replace('http://','links', @bookmark) }}</a></li>
+            <li><a href="{{ @links }}">link</a></li>
         </repeat>
     </ul>
+    <repeat group="{{ @desserts }}" key="{{ @key }}" value="{{ @value }}">
+        <input type="checkbox" id="{{ @key }}" name="{{ @key }}" value="{{ @value }}">
+        <label for="{{ @key }}">{{ @value }}</label><br>
+    </repeat>
 </body>
 </html>
