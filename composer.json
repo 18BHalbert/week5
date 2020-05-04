@@ -1,0 +1,12 @@
+{
+"name": "bhlabert2/IT328/week5",
+"authors": [
+{
+"name": "Benjamin Halbert",
+"email": "bhalbert2@mail.greenriver.edu"
+}
+],
+"require": {
+"bcosca/fatfree-core": "dev-master"
+}
+}
